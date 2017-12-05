@@ -2,9 +2,21 @@
 
 function myMap(arr, callback) {
 
-//  CODE INSIDE HERE   //
-
+var ari = [];
+for (var i = 0; i < arr.length; i++) {
+ 	ari[i] = callback(arr[i], i, arr); 
 }
+return ari;
+}
+
+
+
+
+// ar new_array = arr.map(function callback(currentValue, index, array) {
+//     // Return element for new_array
+// }[, thisArg])
+
+// }
 
 /*
  Best if you don't code out here.
